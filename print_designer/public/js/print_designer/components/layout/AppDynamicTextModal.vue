@@ -214,6 +214,13 @@ const parentFieldWatcher = watch(
 	}
 );
 
+const fieldnamesWatcher = watch(
+	() => fieldnames.value,
+	() => {
+		console.log('fieldnames',fieldnames)
+	}
+);
+
 onMounted(() => {
 	if (props.openDynamicModal) {
 		fieldnames.value = props.openDynamicModal.dynamicContent || [];
