@@ -353,7 +353,9 @@ const handleDeleteClick = () => {
 		selectedEl.value = null;
 	}
 };
-
+const viewModelClick = () => {
+	console.log(props.fieldnames);
+};
 const deleteField = (ev) => {
 	ev.target.classList.contains("dynamic-field") || ev.target.classList.contains("deleteIcon")
 		? ev.target.classList.remove("dropzone")
