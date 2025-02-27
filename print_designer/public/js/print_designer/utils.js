@@ -1016,6 +1016,7 @@ export const handlePrintFonts = (element, printFonts) => {
 };
 
 export const selectElementContents = (el) => {
+	console.log(document)
 	const range = document.createRange();
 	range.selectNodeContents(el);
 	const sel = window.getSelection();
