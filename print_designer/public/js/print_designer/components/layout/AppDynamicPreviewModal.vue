@@ -156,6 +156,10 @@
 			<span class="fa fa-trash"></span>
 			<span style="font-size: 12px; padding: 0px 5px">Delete</span>
 		</div>
+		<div @click.stop="viewModelClick">
+			<span class="fa fa-code"></span>
+			<span style="font-size: 12px; padding: 0px 5px">View Model</span>
+		</div>
 	</div>
 </template>
 
